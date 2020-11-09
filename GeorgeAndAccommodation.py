@@ -1,0 +1,10 @@
+n=int(input(''))
+r=0
+while(n>0):
+    a,b=input('').split()
+    a=int(a)
+    b=int(b)
+    if(b-a>=2):
+        r=r+1
+    n=n-1
+print(r)
