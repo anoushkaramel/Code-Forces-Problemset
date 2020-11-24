@@ -1,0 +1,31 @@
+n=int(input(''))
+l=list(map(int, input("").split()))
+g1,g2,g3,g4=0,0,0,0
+for i in l:
+    if(i==1):
+        g1=g1+1
+    elif(i==2):
+        g2=g2+1
+    elif(i==3):
+        g3=g3+1
+    else:
+        g4=g4+1
+t=g4
+t=t+(g2//2)
+g2=g2%2
+if(g1<=g3):
+    t=t+g1
+    t=t+g3-g1
+    t=t+g2
+else:
+    t=t+g3
+    g1=g1-g3
+    t=t+g1//4
+    g1=g1%4
+    a=g1+g2*2
+    if(a>0):
+        if(a<=4):
+            t=t+1
+        else:
+            t=t+2
+print(t)
