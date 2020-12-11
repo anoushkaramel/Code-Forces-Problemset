@@ -1,0 +1,13 @@
+n,k=input('').split()
+n=int(n)
+k=int(k)
+if(n%2==0):
+    if(k<=n//2):
+        print(2*k-1)
+    else:
+        print((k-(n//2))*2)
+else:
+    if(k<=n//2+1):
+        print(2*k-1)
+    else:
+        print((k-1-n//2)*2)
