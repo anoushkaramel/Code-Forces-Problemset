@@ -1,0 +1,11 @@
+n=int(input(''))
+h=n//2
+if(n%2==0):
+    o=h**2
+    e=h*(h+1)
+    s=e-o
+else:
+    o=(1+h)**2
+    e=h*(h+1)
+    s=e-o
+print(s)
